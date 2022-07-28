@@ -33,7 +33,7 @@ export default function NewsFeed() {
         <Col md={4}>
           <Row className="justify-content-center align-items-center">
             <Col className="text-sm-start text-center mb-sm-0 mb-3">
-              <h1 style={{color: "#D7DF22"}}>Ola Connect</h1>
+              <h1 style={{color: "#D7DF22"}}>CHATTER BOX</h1>
             </Col>
           </Row>
         </Col>
