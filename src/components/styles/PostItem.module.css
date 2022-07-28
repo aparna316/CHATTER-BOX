@@ -1,0 +1,36 @@
+.loveButton {
+    color: red;
+
+}
+
+.commentButton {
+    color: #D7DF22;
+
+}
+
+.shareButton {
+    color: #D7DF22;
+
+}
+
+.sendCommentButton {
+    color: #D7DF22
+
+}
+
+.loveButton:hover {
+    cursor: pointer;
+    color: #D7DF22;
+}
+
+.commentButton:hover {
+    cursor: pointer;
+}
+
+.shareButton:hover {
+    cursor: pointer;
+}
+
+.sendCommentButton:hover {
+    cursor: pointer;
+}

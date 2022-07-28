@@ -1,0 +1,67 @@
+.container {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.colContainerRight {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colContainerLeft {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftBackground {
+    background-image: url("../assets/Social-Media.png");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.colWithButtons {
+    width: 50%;
+    color: #ffffff;
+}
+ 
+
+.linkTextFormat {
+    text-decoration: none;
+    color: white;
+}
+.contentPage{
+    color: #ffffff;
+}
+
+.linkTextFormat:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.btnHomePage {
+    width: 100%;
+    background-color: hsl(0, 0%, 56%);
+    border-radius: 24px;
+    border-color: white;
+}
+.btnHomePage:hover{
+    color: #000000;
+    background-color: white;
+    font-weight: bolder;
+    border-color: white;
+}
+.xy{
+    height:200px;
+    width:100px;
+}
