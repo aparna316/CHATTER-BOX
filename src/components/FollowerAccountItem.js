@@ -5,7 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProfileId } from "../feature/checkProfile/checkProfileSlice";
 import { followAccount } from "../feature/followingAccounts/followingAccountSlice";
 import { Button } from "react-bootstrap";
+
 //import icons from react-icons
+
 import { RiCheckFill, RiUserFollowFill } from "react-icons/ri";
 
  export default function FollowerAccountItem(props) {
