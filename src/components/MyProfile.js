@@ -26,8 +26,8 @@ export default function MyProfile() {
   }, []);
 //JSx Part
   return (
-    <div>
-      <h1>Post</h1>
+    <div >
+      <h1 >POST</h1>
       {postList !== null ? (
         postList.map((postItem) => {
           return (
@@ -40,4 +40,5 @@ export default function MyProfile() {
     </div>
   );
 }
+
  

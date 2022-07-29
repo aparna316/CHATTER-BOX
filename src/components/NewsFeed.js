@@ -47,36 +47,39 @@ export default function NewsFeed() {
             <Navbar.Collapse>
               <Nav className={styles.navContainer} >
                 <ul className="list-group">
+
+                <Nav.Link>
+                  <Link to="" className="text-decoration-none">
+                    <li className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
+                      <span>
+                        Explore
+                      </span>
+                    </li>
+                  </Link>
+                </Nav.Link>
                 <Nav.Link>
                   <Link to="myprofile" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3  shadow" style={{color: "black"}}>
+                    <li className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
                       <span>
                          My Posts
                       </span>
                     </li>
                   </Link>
                 </Nav.Link>
+               
                 <Nav.Link>
                   <Link to="newpost" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3  shadow" style={{color: "black"}}>
+                    <li className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
                       <span>
                           New Post
                       </span>
                     </li>
                   </Link>
                 </Nav.Link>
-                <Nav.Link>
-                  <Link to="" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3  shadow" style={{color: "black"}}>
-                      <span>
-                          News Feed
-                      </span>
-                    </li>
-                  </Link>
-                </Nav.Link>
+                
                 <Nav.Link>
                   <Link to="/newsfeed/allaccounts" className="text-decoration-none" >
-                    <li className="list-group-item fs-5 py-3   shadow" style={{color: "black"}}>
+                    <li className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
                       <span >
                         {" "}
                          User Accounts
@@ -87,7 +90,7 @@ export default function NewsFeed() {
                
                 <Nav.Link>
                   <Link to="following" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3  shadow" style={{color: "black"}}>
+                 <li  className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
                       <span>
                           Following
                       </span>
@@ -96,7 +99,8 @@ export default function NewsFeed() {
                 </Nav.Link>
                 <Nav.Link>
                   <Link to="follower" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3   shadow" style={{color: "black"}}>
+                    <li 
+                    className={`list-group-item fs-5 py-3  shadow ${styles.signOutButton}`}style={{color: "black"}}>
                       <span>
                         Followers
                       </span>
