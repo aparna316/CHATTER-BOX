@@ -81,14 +81,14 @@ export default function PostItem(props) {
   }
 
   return (
-    <div className="border shadow rounded-3 border-primary p-3 mt-3" style={{color: "#D7DF22"}}>
+    <div className="border shadow rounded-3 border-primary p-3 mt-3" style={{color: "white"}}>
       <Row>
         <div className="d-flex align-items-center mb-3">
           <div className="mx-3">
             <Hashicon value={props.userId} size={50} />
           </div>
           <div className="d-flex flex-column">
-          <div className="fw-bold" style={{color: "#D7DF22"}}>{props.firstName + " " + props.lastName}</div>
+          <div className="fw-bold" style={{color: "white"}}>{props.firstName + " " + props.lastName}</div>
           <div className="text-secondary">{timeAgo.format(new Date(props.postDate).getTime())}</div>
           </div>
         </div>

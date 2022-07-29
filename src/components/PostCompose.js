@@ -151,7 +151,7 @@ export default function PostCompose() {
 //JSX part
   return (
     <div>
-      <div className=" rounded-3 border-success p-3 shadow" style={{color: "white", borderColor:"white"}}>
+      <div className=" rounded-3 border-success p-3 shadow" style={{color: "white"}}>
        
         
         {file64String !== null ? (

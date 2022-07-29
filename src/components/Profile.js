@@ -21,7 +21,7 @@ export default function Profile() {
 
   return (
     <div>
-      <h1 style={{color: "#D7DF22"}}> Posts</h1>
+      <h1 style={{color: "white"}}> Posts</h1>
       {postList !== null ? (
         postList.map((postItem) => {
           return (
