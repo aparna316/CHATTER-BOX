@@ -5,7 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProfileId } from "../feature/checkProfile/checkProfileSlice";
 import { followAccount } from "../feature/followingAccounts/followingAccountSlice";
 import { Button } from "react-bootstrap";
+
 //import icons from react-icons
+
 import { RiCheckFill, RiUserFollowFill } from "react-icons/ri";
 
  export default function FollowerAccountItem(props) {
@@ -52,12 +54,12 @@ import { RiCheckFill, RiUserFollowFill } from "react-icons/ri";
         <Hashicon value={props.id} size={50} />
       </div>
       <div className="mx-3 fw-bold">
-        <Link to="/newsfeed/profile" className="text-decoration-none  " style={{color: "#D7DF22"}}onClick={handleClick} >
+        <Link to="/newsfeed/profile" className="text-decoration-none  " style={{color: "#e9d1e0"}}onClick={handleClick} >
           {props.firstName + " " + props.lastName}
         </Link>
       </div>
       <div>
-        <Button style={{backgroundColor: "#D7DF22"}} variant={tickIconStatus ? "primary" : "success"} onClick={handleFollowButtonClick} disabled={tickIconStatus} >
+        <Button style={{backgroundColor: "#ff0000"}} variant={tickIconStatus ? "primary" : "success"} onClick={handleFollowButtonClick} disabled={tickIconStatus} >
           {followButtonTitle}{" "}
           {tickIconStatus ? <RiCheckFill /> : <RiUserFollowFill />}
         </Button>
