@@ -22,7 +22,7 @@ export default function FollowingList() {
 //JSX part
   return (
     <div>
-      <h1 style={{color: "#D7DF22"}}>List OF Following Friends</h1>
+      <h1 style={{color: "white"}}>List OF Following Friends</h1>
       {storeFollowingAccounts ? (
         storeFollowingAccounts.map((followingAccount) => {
           return (

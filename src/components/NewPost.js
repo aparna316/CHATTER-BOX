@@ -151,9 +151,31 @@ export default function PostCompose() {
 //JSX part
   return (
     <div>
-      <div className=" rounded-3 border-success p-3 shadow" style={{color: "white", borderColor:"white"}}>
-       
-        
+      <div className="border rounded-3 border-success p-3 shadow" style={{color: "white",borderColor:"white"}}>
+        <ToastContainer />
+        <Form className="d-flex flex-column">
+          <Form.Group className="mb-3">
+            <Form.Label>
+              <div className="d-flex align-items-center mb-1">
+                <div className="mx-3">
+                  <Hashicon value={userId} size={60} />
+                </div>
+                <div className="fs-4 fw-bold">{userFullname}</div>
+              </div>
+            </Form.Label>
+            <Form.Control as="textarea" row={4} placeholder="What is happening?" value={postContent} onChange={handleContentChange} style={{ resize: "none", height: "7rem",borderColor:"white"}} />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Image</Form.Label>
+            <Form.Control type="file" accept=".jpg, .jpeg, .png" onChange={onUploadFileChange} />
+          </Form.Group>
+          <div className="d-flex justify-content-end align-items-center">
+            <span>Characters: {postContentCount}/200</span>
+            <Button onClick={handleCreatePost} variant="success" disabled={disablePostButton} className="col-2 mx-3" style={{color:"white",backgroundColor: "black",borderColor:"white"}}>
+              Post
+            </Button>
+          </div>
+        </Form>
         {file64String !== null ? (
           <img src={file64StringWithType} alt="chosen" />
         ) : (

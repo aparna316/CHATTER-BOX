@@ -20,7 +20,7 @@ export default function AllAccounts() {
 //User Accounts
   return (
     <div>
-      <h1 style={{color: "#D7DF22"}}>List of User Accounts</h1>
+      <h1 style={{color: "white"}}>ChatterBox Users</h1>
       {storeFollowerAccounts ? (
         storeFollowerAccounts.map((followerAccount) => {
           return (

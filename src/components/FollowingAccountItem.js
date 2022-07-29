@@ -39,11 +39,11 @@ export default function FollowingAccountItem(props) {
         <Hashicon value={props.id} size={50} />
       </div>
       <div className="mx-3 fw-bold">
-        <Link to="/newsfeed/profile" className="text-decoration-none "style={{color: "#D7DF22"}} onClick={handleClick} > {props.firstName + " " + props.lastName}
+        <Link to="/newsfeed/profile" className="text-decoration-none "style={{color: "white"}} onClick={handleClick} > {props.firstName + " " + props.lastName}
         </Link>
       </div>
       <div>
-        <Button style={{backgroundColor: "#D7DF22"}} variant={tickIconStatus ? "danger" : "success"} onClick={handleFollowButtonClick} > {followButtonTitle}{" "} {tickIconStatus ? <RiCheckFill /> : <RiDeleteBin6Line />} </Button>
+        <Button style={{backgroundColor: "black"}} variant={tickIconStatus ? "danger" : "success"} onClick={handleFollowButtonClick} > {followButtonTitle}{" "} {tickIconStatus ? <RiCheckFill /> : <RiDeleteBin6Line />} </Button>
       </div>
     </div>
   );

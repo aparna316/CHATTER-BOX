@@ -21,7 +21,7 @@ export default function FollowerList() {
 //JSX Part
   return (
     <div>
-      <h1 style={{color: "#D7DF22"}}> List Of Followers</h1>
+      <h1 style={{color: "white"}}> List Of Followers</h1>
       {storeFollowerAccounts ? (
         storeFollowerAccounts.map((followerAccount) => {
           return (

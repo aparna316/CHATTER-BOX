@@ -12,6 +12,7 @@ import Profile from "./Profile";
 import MyProfile from "./MyProfile";
 import AllAccounts from "./AllAccounts";
 import UnauthorizedPage from "./UnauthorizedPage";
+import NewPost from "./NewPost";
 
 //Routing all the components and pages
 export default function AppContainer() {
@@ -28,6 +29,7 @@ export default function AppContainer() {
           <Route path="profile" element={<Profile />} />
           <Route path="myprofile" element={<MyProfile />} />
           <Route path="allaccounts" element={<AllAccounts />} />
+          <Route path="newpost" element={<NewPost />} />
         </Route>
         <Route path="/unauthorized" element={<UnauthorizedPage />} />
         <Route path="*" element={<NotFoundPage />} />        
